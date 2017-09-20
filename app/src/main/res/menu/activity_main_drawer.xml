@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="My Profile" />
+
+        <!--   <item
+               android:id="@+id/nav_categories"
+               android:icon="@drawable/ic_category"
+               android:title="Categories" />-->
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_orders"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_wishlist"
+            android:title="My Wishlist" />
+
+        <item
+            android:id="@+id/nav_sell_my_products"
+            android:icon="@drawable/ic_sell_my_products"
+            android:title="Sell My Products" />
+
+    </group>
+
+    <item
+        android:id="@+id/sub_menu_nepbay_services"
+        android:title="NepBay Services">
+        <menu>
+            <item
+                android:id="@+id/nav_advertising_solutions"
+                android:icon="@drawable/ic_advertising_solutions"
+                android:checkableBehavior="none"
+                android:title="Advertising Solutions" />
+            <item
+                android:id="@+id/nav_web_services"
+                android:icon="@drawable/ic_web_services"
+                android:title="Web Services" />
+            <item
+                android:id="@+id/nav_nepbay_bazar"
+                android:icon="@drawable/ic_nepbay_bazar"
+                android:title="NepBay Bazar" />
+            <item
+                android:id="@+id/nav_community"
+                android:icon="@drawable/ic_community"
+                android:title="Community" />
+            <item
+                android:id="@+id/nav_ecommerce_solutions"
+                android:icon="@drawable/ic_ecommerce_solutions"
+                android:title="E-commerce Solutions" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sub_menu_help_about"
+        android:title="Help &amp; About">
+        <menu>
+            <item
+                android:id="@+id/nav_about_nepbay"
+                android:icon="@drawable/ic_advertising_solutions"
+                android:checkableBehavior="none"
+                android:title="About Nepbay" />
+            <item
+                android:id="@+id/nav_shipping"
+                android:icon="@drawable/ic_web_services"
+                android:title="Shipping &amp; Delivery" />
+            <item
+                android:id="@+id/nav_customer_support"
+                android:icon="@drawable/ic_nepbay_bazar"
+                android:title="Customer Support" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

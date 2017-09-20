@@ -1,0 +1,59 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorText"
+    tools:context="com.nepalicoders.nepbayapp.fragments.CategoryProductsListingFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Offer Zone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:elevation="3dp" />
+
+        <include layout="@layout/fragment_templates_two_products_grid_view" />
+
+    </LinearLayout>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="1dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/loadingMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorText"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="1dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

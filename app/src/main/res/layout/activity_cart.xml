@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.nepalicoders.nepbayapp.fragments.CartFragment">
+
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="top"
+                android:background="@drawable/gradient_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bottom" />
+        </FrameLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/cash_on_delivery_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/cash_on_delivery_ic"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_cash_on_delivery"
+                    android:tint="@color/colorText" />
+
+            </FrameLayout>
+            &lt;!&ndash; <FrameLayout
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorDivider">
+
+             </FrameLayout>&ndash;&gt;
+            <FrameLayout
+                android:id="@+id/bank_transfer_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/bank_transfer_ic"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bank"
+                    android:tint="@color/colorText" />
+
+            </FrameLayout>
+
+            &lt;!&ndash;<FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider">
+
+            </FrameLayout>&ndash;&gt;
+
+           &lt;!&ndash; <FrameLayout
+                android:id="@+id/order_by_phone_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/order_by_phone_ic"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_down"
+                    android:tint="@color/colorText" />
+
+            </FrameLayout>&ndash;&gt;
+
+
+        </LinearLayout>-->
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/emptycart"
+    android:padding="16dp"
+    android:visibility="gone"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="-16dp"
+        android:src="@drawable/emptycart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:text="Your cart is empty!\n Add some items to your cart?"
+        android:textSize="16sp"
+        />
+</LinearLayout>
+
+</FrameLayout>

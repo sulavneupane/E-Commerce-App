@@ -1,0 +1,26 @@
+<!--First Image Slider-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:scaleType="centerCrop"
+    app:layout_collapseMode="parallax">
+
+    <com.nepalicoders.nepbayapp.utils.NepaliCodersViewPager
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        app:fillColor="@color/colorAccent"
+        app:strokeColor="@color/colorPrimary" />
+
+</FrameLayout>

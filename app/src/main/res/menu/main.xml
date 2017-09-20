@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Categories"
+        android:id="@+id/action_right_drawer"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_dots"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Cart"
+        android:id="@+id/action_cart"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_cart"
+        app:actionLayout="@layout/action_bar_cart_icon"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

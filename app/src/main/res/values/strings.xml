@@ -1,0 +1,342 @@
+<resources>
+    <string name="app_name">NepBay</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="action_search">Search</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="action_register">Register</string>
+    <string name="prompt_mobile">Mobile Number</string>
+    <string name="prompt_username">Username</string>
+
+    <string name="accept_user_agreement"><![CDATA[I  have read and accepted User Agreement & Privacy Policy.]]></string>
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="title_activity_search_result">Search Results</string>
+
+    <string name="name_label">Name : </string>
+    <string name="email_label">Email :</string>
+    <string name="username">Username : </string>
+    <string name="total_order_label">Total Order(s) : </string>
+    <string name="rejected_order_label">Rejected\n Order(s)</string>
+    <string name="approved_order_label">Approved\n Order(s)</string>
+    <string name="pending_order_label">Pending\nOrder(s)</string>
+    <string name="phone_label">Phone :</string>
+    <string name="order_by_phone_dialog_title_label">Order By Phone, Call Us:</string>
+
+    <string name="order_pop_up_positive_string">Ok</string>
+    <string name="order_pop_up_negative_string">Cancel</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="billing_address_label">Billing Address</string>
+    <string name="address_country_label">Country</string>
+    <string name="address_state_label">State</string>
+    <string name="address_city_label">City</string>
+    <string name="address_zip_label">Zip</string>
+    <string name="address_phone_label">Phone</string>
+
+    <string name="address_label">Address</string>
+    <string name="address_1_label">Address 1</string>
+    <string name="address_2_label">Address 2</string>
+    <string name="place_order">Confirm Order</string>
+
+    <string name="billing_address_1_label">Address 1: </string>
+    <string name="billing_address_2_label">Address 2: </string>
+    <string name="shipping_address_1_label">Address 1: </string>
+    <string name="shipping_address_2_label">Address 2: </string>
+
+    <string name="shipping_address_label">Delivery Address</string>
+    <string name="country_label">Country :</string>
+    <string name="state_label">State :</string>
+    <string name="city_label">City :</string>
+    <string name="zip_label">Postal :</string>
+
+
+    <string name="cash_on_delivery_dialog_title_label">Cash on Delivery</string>
+    <string name="bank_transfer_dialog_title_label">Bank Transfer</string>
+
+    <string name="edit_password_label">Password :</string>
+    <string name="prompt_old_password">Old Password</string>
+    <string name="prompt_new_password">New Password</string>
+
+    <string name="passwords_not_same">Passwords do not Match!</string>
+
+    <string name="privacy_user">Please Accept our Terms of Use and Privacy Policy !</string>
+
+
+    <string name="logged_out">Successfully logged out!</string>
+    <string name="logged_out_failed">Can not log out at the Moment !\n Please try again later!</string>
+
+    <string name="fill_all_fields">Please fill all the fields !</string>
+    <string name="username_password_incorrect">Incorrect username/email/mobile or password!</string>
+
+    <string name="no_internet">No Internet Connection! Please check your connection!</string>
+    <string name="not_yet_user">Register</string>
+    <string name="not_logged_in">Not Logged In!</string>
+
+    <string name="press_again_exit">Press Back again to Exit!</string>
+    <string name="mobile_label">Mobile :</string>
+    <string name="updating">Updating...</string>
+
+    <string name="profile_update_success">Profile Updated !</string>
+    <string name="profile_update_not_success">Update was not successful!\n Please try again later.</string>
+
+    <string name="logging_in">Logging in...</string>
+    <string name="login_failed">Could not login! Try again Later</string>
+    <string name="logging_out">Logging out...</string>
+
+    <string name="registering">Please wait a moment, registering...</string>
+    <string name="activating">Please wait a moment, activating account...</string>
+    <string name="register_failed">Could not Register! Please Try in a While</string>
+    <string name="register_successful">Registered successfully, Please Login now!</string>
+
+    <string name="activation_failed">Invalid Activation Code, Please try again!</string>
+    <string name="activation_successful">Account activated successfully, Please Login now!</string>
+
+    <string name="loading">Loading...</string>
+
+    <string name="title_activity_app_tour">AppTour</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="no_product_found">No Product Found!</string>
+    <string name="placing_order">Placing you order...</string>
+    <string name="activate">Activate</string>
+    <string name="activation_title">Activation</string>
+    <string name="activation_para">An activation code was sent to your Mobile.\nEnter the code below:</string>
+    <string name="register_para">New to NepBay? Get started now.</string>
+    <string name="request_activation_code">Request activation code.</string>
+    <string name="right_drawer_title">Shop by Departments</string>
+
+
+    <string name="please_wait">Please Wait...</string>
+    <string name="prompt_username_email_phone">Username/Email/Mobile</string>
+    <string name="link_sell_my_products">www.nepbay.com</string>
+    <string name="no_sms_check_email">Check your email if you haven\'t received SMS.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender :</string>
+    <string name="no_sms_call_us">NOTE: If you do not receive activation code in your SMS, please call us at: +977-985-123-1001 (Mobile/Viber/WhatsApp) for manual activation.</string>
+
+
+    <string-array name="CountryCodes" >
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+</resources>

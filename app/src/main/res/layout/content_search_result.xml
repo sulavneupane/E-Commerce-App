@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nepalicoders.nepbayapp.activities.SearchResult"
+    tools:showIn="@layout/activity_search_result">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/searchQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>-->
+
+    <include layout="@layout/fragment_templates_two_products_grid_view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:id="@+id/noResultMessage"
+        android:fontFamily="sans-serif-light"
+        android:text="Oops! No, item found!!!"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/loadingMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorText"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:id="@+id/noInternetMessage"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/no_internet"/>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="1dp" />
+
+</RelativeLayout>

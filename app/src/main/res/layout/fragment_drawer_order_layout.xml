@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/my_orders_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/totalOrderIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_total"/>
+
+        <TextView
+            android:id="@+id/total_order_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totalOrderIcon"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/total_order_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/total_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/total_order_label"
+            android:layout_toRightOf="@id/total_order_label"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/lineBreaker"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/total_order_label"
+            android:layout_marginTop="8dp"
+            android:background="#1e000000">
+
+        </RelativeLayout>
+
+        <com.nepalicoders.nepbayapp.adapters.AnimatedExpandableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lineBreaker"
+            android:clipToPadding="false"
+            android:groupIndicator="@null"
+            android:paddingBottom="12dp"
+            android:paddingTop="0dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noInternetMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/no_internet"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="1dp" />
+
+</RelativeLayout>

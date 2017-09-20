@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nepalicoders.nepbayapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.nepalicoders.nepbayapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nepalicoders.nepbayapp.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.CartActivity" />
+
+        <activity
+            android:name=".activities.ProductDetail"
+            android:label="@string/title_activity_product_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activities.SearchResult"
+            android:label="@string/title_activity_search_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.example.sampleapp.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- For GCM Push Services, must be at the last -->
+        <!--<receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                &lt;!&ndash; Receives the actual messages. &ndash;&gt;
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                &lt;!&ndash; Receives the registration id. &ndash;&gt;
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.nepalicoders.nepbayapp" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />-->
+
+        <activity
+            android:name=".activities.AppIntro"
+            android:label="@string/title_activity_app_tour"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nepalicoders.nepbayapp.activities.MainActivity" />
+        </activity>
+
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.nepalicoders.nepbayapp.receivers.PushNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.starter" to match your app's package name.
+                -->
+                <category android:name="com.nepalicoders.nepbayapp" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_launcher"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:orientation="vertical"
+    tools:context="com.nepalicoders.nepbayapp.fragments.HomeFragment">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_images_slider"
+                layout="@layout/fragment_templates_home_image_slider" />
+
+        </LinearLayout>
+
+    </ScrollView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_view_offer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <!--<ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:id="@+id/noInternetMessage"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/no_internet"/>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="26dp">
+
+    <TextView
+        android:id="@+id/header_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Header"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:elevation="2dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/header_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="MORE"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_scroll_view_items"
+        android:layout_below="@id/header_offer"
+        android:layout_width="match_parent"
+        android:layout_height="246dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:id="@+id/no_product_found"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/no_product_found"/>
+
+</RelativeLayout>

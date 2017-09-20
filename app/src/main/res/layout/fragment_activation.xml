@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/nepbay_login_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_nepbay_user"
+                app:civ_border_color="@color/colorDivider"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/activation_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/activation_para"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/activation_edit_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/activation_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:background="@drawable/border_primary_fill"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/activate"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/address_font_size" />
+
+            <TextView
+                android:id="@+id/activation_no_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/no_sms_call_us"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+
+            <!--<TextView
+                android:id="@+id/activation_request_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/request_activation_code"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
