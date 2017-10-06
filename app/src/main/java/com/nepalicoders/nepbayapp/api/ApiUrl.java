@@ -5,7 +5,7 @@ package com.nepalicoders.nepbayapp.api;
  */
 public class ApiUrl {
 
-    public static final String baseUrl = "http://developers.nepbay.com/api/index.php"; //This is the base url
+    public static final String baseUrl = "******"; //This is the base url
 
 
     public static final String CategoryListUrl=baseUrl+"/welcome_categories/display";
